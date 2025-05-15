@@ -10,27 +10,48 @@ function App() {
       <CssBaseline />
       <Box
         sx={{
+          position: "relative",
           minHeight: "100vh",
-          bgcolor: "#f0f4f5",
-          px: 2,
+          height: "100vh",
           display: "flex",
-          flexDirection: "column",
           alignItems: "center",
           justifyContent: "center",
-          textAlign: "center",
           overflow: "hidden"
         }}
       >
-        <Container maxWidth="sm">
+        {/* 🔽 Background image */}
+        <Box
+          sx={{
+            position: "absolute",
+            inset: 0,
+            zIndex: -2,
+            backgroundImage: 'url(./images/backgrounds/repetible3.png)',
+            backgroundSize: "33.3333%",
+            backgroundPosition: "center",
+            backgroundRepeat: "repeat"
+          }}
+        />
+
+        {/* 🔽 Overlay escuro */}
+        <Box
+          sx={{
+            position: "absolute",
+            inset: 0,
+            zIndex: -1,
+            backgroundColor: "rgba(0, 0, 0, 0.4)" // ajuste aqui a opacidade
+          }}
+        />
+
+        {/* 🔽 Conteúdo principal */}
+        <Container maxWidth="sm" sx={{ textAlign: "center", color: "#fff" }}>
           <Typography
-            variant="h4"          // reduzido de h3 para h4 para título menor
+            variant="h4"
             component="h1"
             fontWeight="bold"
             gutterBottom
             sx={{
-              color: "#00796b",
-              textShadow: "0 1px 3px rgba(0,0,0,0.15)",
-              mb: 3               // menos espaço abaixo
+              textShadow: "0 1px 3px rgba(0,0,0,0.5)",
+              mb: 3
             }}
           >
             🎭 Quiz Cultural EMLTC
@@ -40,8 +61,7 @@ function App() {
             <>
               <Typography
                 variant="subtitle1"
-                color="textSecondary"
-                sx={{ mb: 4, fontWeight: 500 }}
+                sx={{ mb: 4, fontWeight: 500, color: "#e0f2f1" }}
               >
                 Descubra qual curso cultural mais combina com você!
               </Typography>
