@@ -30,30 +30,39 @@ export default function Question({ questionText, options, onSelect }: QuestionPr
 
       <Stack spacing={2}>
         {options.map((option, idx) => (
-          <Button
-            key={idx}
-            variant="outlined"
-            fullWidth
-            size="large"
-            sx={{
-              justifyContent: "flex-start",
-              textTransform: "none",
-              fontWeight: 500,
-              fontSize: "1.1rem",
-              color: "#00695c",
-              borderColor: "#b2dfdb",
-              transition: "all 0.3s ease",
-              "&:hover": {
-                backgroundColor: "#00796b",
-                color: "#e0f2f1",
-                borderColor: "#004d40",
-                boxShadow: "0 4px 15px rgba(0,121,107,0.4)",
-              },
-            }}
-            onClick={() => onSelect(option.value)}
-          >
-            {option.label}
-          </Button>
+			<Button
+				key={idx}
+				variant="outlined"
+				fullWidth
+				size="large"
+				disableRipple
+				onClick={(e) => {
+					// Remove foco visual
+					(e.currentTarget as HTMLElement).blur();
+					onSelect(option.value);
+				}}
+				sx={{
+					justifyContent: "flex-start",
+					textTransform: "none",
+					fontWeight: 500,
+					fontSize: "1.1rem",
+					color: "#00695c",
+					borderColor: "#b2dfdb",
+					transition: "all 0.3s ease",
+					"&:hover": {
+					backgroundColor: "#00796b",
+					color: "#e0f2f1",
+					borderColor: "#004d40",
+					boxShadow: "0 4px 15px rgba(0,121,107,0.4)",
+					},
+					"&:focus": {
+					outline: "none",
+					boxShadow: "none",
+					}
+				}}
+			>
+				{option.label}
+			</Button>
         ))}
       </Stack>
     </div>

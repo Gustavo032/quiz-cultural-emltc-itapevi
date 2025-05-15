@@ -14,11 +14,11 @@ import {
 } from "@mui/material";
 
 const options = [
-  { label: "Concordo totalmente", value: 2 },
-  { label: "Concordo", value: 1 },
-  { label: "Indiferente", value: 0 },
-  { label: "Discordo", value: -1 },
-  { label: "Discordo totalmente", value: -2 }
+  { label: "Sim, com certeza", value: 2 },
+  { label: "Sim", value: 1 },
+  { label: "Talvez", value: 0 },
+  { label: "Não", value: -1 },
+  { label: "Não, de jeito nenhum", value: -2 }
 ];
 
 export default function Quiz() {
