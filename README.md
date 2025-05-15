@@ -1,46 +1,90 @@
-# Getting Started with Create React App
+# 🎭 Quiz Cultural EMLTC – Descubra Seu Curso Ideal
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este é um projeto de extensão universitária desenvolvido como parte do curso de Engenharia de Software (Anhanguera), em parceria com a **Escola Municipal Livre de Teatro e Circo (EMLTC)** de Itapevi – SP.
 
-## Available Scripts
+## 📌 Objetivo
 
-In the project directory, you can run:
+O sistema tem como objetivo ajudar moradores da cidade a descobrirem qual curso cultural mais combina com seus interesses e perfil pessoal. O quiz analisa as respostas de forma comportamental e temática, e sugere cursos como:
 
-### `yarn start`
+- 🎭 Teatro
+- 🎪 Circo
+- 💃 Dança (Ballet, Jazz, Contemporâneo, etc.)
+- 🎶 Música
+- 🎨 Artes Visuais (Desenho, Artesanato)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## 💡 Como funciona
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+O sistema exibe 15 perguntas e o usuário responde com base em seu grau de afinidade:
 
-### `yarn test`
+- Concordo totalmente
+- Concordo
+- Indiferente
+- Discordo
+- Discordo totalmente
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Cada resposta gera uma pontuação, que é somada para cada categoria. Ao final, o sistema mostra o curso com maior pontuação e uma descrição personalizada.
 
-### `yarn build`
+## 🛠️ Tecnologias Utilizadas
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- [React](https://reactjs.org/) – Frontend moderno e responsivo
+- TypeScript – Tipagem estática
+- Tailwind CSS (opcional) – Estilização
+- Vite – Ferramenta de build e dev server
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 📁 Estrutura
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```
+src/
+├── components/
+│   ├── Quiz.tsx
+│   ├── Question.tsx
+│   └── Result.tsx
+├── data/
+│   └── questions.json
+├── types.ts
+├── App.tsx
+```
 
-### `yarn eject`
+## 🚀 Como rodar localmente
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+1. Clone o repositório:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+git clone https://github.com/seu-usuario/quiz-cultural-emltc.git
+cd quiz-cultural-emltc
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+2. Instale as dependências:
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+```bash
+npm install
+```
 
-## Learn More
+3. Inicie o servidor:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```bash
+npm run dev
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Acesse o projeto em `http://localhost:5173`
+
+## 🌍 Deploy
+
+O projeto pode ser facilmente publicado usando o [Vercel](https://vercel.com/):
+
+- Faça login com sua conta GitHub
+- Clique em “Import Project”
+- Escolha o repositório
+- Clique em “Deploy”
+
+## 📄 Licença
+
+Este projeto foi desenvolvido com fins educacionais e de extensão social.  
+É gratuito, de código aberto e pode ser adaptado por outras instituições culturais.
+
+## 🤝 Contato e parceria
+
+**Escola Municipal Livre de Teatro e Circo – Itapevi**  
+📍 Av. Luiz Manfrinato, 194 – Centro – Itapevi – SP  
+📞 (11) 4205-1871 Ramal 24
+

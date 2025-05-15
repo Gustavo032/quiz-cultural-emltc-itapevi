@@ -1,0 +1,77 @@
+[
+  {
+    "id": 1,
+    "text": "Você gosta de contar histórias e se colocar no lugar de personagens?",
+    "weights": { "teatro": 2 }
+  },
+  {
+    "id": 2,
+    "text": "Você tem facilidade em usar o corpo para se expressar, sem precisar falar?",
+    "weights": { "circo": 2, "dança": 1 }
+  },
+  {
+    "id": 3,
+    "text": "Você se sente animado quando escuta música e imagina como seria tocá-la?",
+    "weights": { "música": 2 }
+  },
+  {
+    "id": 4,
+    "text": "Você gosta de criar coisas com as mãos, como desenhar ou montar objetos?",
+    "weights": { "artes_visuais": 2 }
+  },
+  {
+    "id": 5,
+    "text": "Você se diverte com atividades que exigem equilíbrio, coordenação e movimento físico intenso?",
+    "weights": { "circo": 2, "dança": 1 }
+  },
+  {
+    "id": 6,
+    "text": "Você tem curiosidade sobre a origem e evolução das expressões artísticas?",
+    "weights": { "teatro": 1, "música": 1, "artes_visuais": 1 }
+  },
+  {
+    "id": 7,
+    "text": "Você prefere se expressar com imagens e formas do que com palavras ou sons?",
+    "weights": { "artes_visuais": 2 }
+  },
+  {
+    "id": 8,
+    "text": "Você se sente confortável se apresentando em público?",
+    "weights": { "teatro": 2, "música": 1, "circo": 1 }
+  },
+  {
+    "id": 9,
+    "text": "Você gosta de experimentar ritmos diferentes com o corpo (salsa, funk, hip hop...)?",
+    "weights": { "dança": 2, "música": 1 }
+  },
+  {
+    "id": 10,
+    "text": "Você tem interesse em aprender instrumentos musicais?",
+    "weights": { "música": 2 }
+  },
+  {
+    "id": 11,
+    "text": "Quando estou em grupo, costumo assumir naturalmente o papel de líder.",
+    "weights": { "teatro": 2, "circo": 1, "música": 1 }
+  },
+  {
+    "id": 12,
+    "text": "Tenho facilidade em perceber detalhes e expressões nos outros.",
+    "weights": { "teatro": 1, "dança": 1, "artes_visuais": 2 }
+  },
+  {
+    "id": 13,
+    "text": "Prefiro trabalhar de forma individual e focada, sem muita exposição.",
+    "weights": { "artes_visuais": 2, "música": 1 }
+  },
+  {
+    "id": 14,
+    "text": "Gosto de desafios físicos e atividades que me tirem da zona de conforto.",
+    "weights": { "dança": 2, "circo": 2 }
+  },
+  {
+    "id": 15,
+    "text": "Me sinto realizado quando consigo emocionar ou inspirar outras pessoas com o que faço.",
+    "weights": { "teatro": 2, "música": 2, "dança": 1 }
+  }
+]
